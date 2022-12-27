@@ -39,7 +39,8 @@ streamlit.write('The user entered ', fruit_choice)
 # basic1 streamlit.text(fruityvice_response.json()) #just writes the raw json data to the screen
 
 import requests 
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
+# basic2 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 # basic1 streamlit.text(fruityvice_response.json()) #just writes the raw json data to the screen
 
 # normalised json output to rows & columns
